@@ -961,6 +961,16 @@ section {
 
 .portfolio .portfolio-item {
   margin-bottom: 30px;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .portfolio .portfolio-item {
+    display: none;
+  }
+  .portfolio .portfolio-item:first-child {
+    display: block;
+  }
 }
 
 .portfolio .portfolio-item .portfolio-img {
@@ -1101,7 +1111,12 @@ section {
 # Seccion opiniones
 --------------------------------------------------------------*/
 /* Fondo opiniones*/
-.team{background-image: url("../img/fondoopiniones.svg");}
+.team{background-image: url("../img/fondoopiniones.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-size: 100% auto;
+}
 
 .team .member {
   position: relative;
